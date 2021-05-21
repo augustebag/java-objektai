@@ -3,9 +3,27 @@ package objektai;
 
 public class Puodukas {
     
-    public int turis;
-    public char spalva;
-    public int kiekis;
+    private int turis;
+    private char spalva;
+    private int kiekis;
+    
+    public Puodukas(int t, char sp) {
+        turis = t;
+        spalva = sp;
+        kiekis = 0;
+    }
+    
+    public int getTuris() {
+        return turis;
+    }
+    
+    public int getKiekis() {
+        return kiekis;
+    }
+    
+    public char getSpalva() {
+        return spalva;
+    }
     
     public void ipilk(int kiek) {
         if (kiek <= 0) {

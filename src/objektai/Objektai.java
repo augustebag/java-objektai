@@ -5,36 +5,16 @@ public class Objektai {
 
     public static void main(String[] args) {
         
-        Puodukas puodukas = new Puodukas();
+        Puodukas puodukas = new Puodukas(300, 'r');
         
-        puodukas.turis = 300;
-        puodukas.spalva = 'r';
-        puodukas.kiekis = 0;
+        System.out.println("Puodukas1:" + puodukas.getTuris());
+        System.out.println("Puodukas1:" + puodukas.getSpalva());
 
-        puodukas.ipilk(100);
-
-        System.out.println(puodukas.kiekis);
-
-        puodukas.ipilk(100);
- 
-        System.out.println(puodukas.kiekis);
-        
-        puodukas.ipilk(500);
- 
-        System.out.println(puodukas.kiekis);
-        System.out.println("geriam");        
-        puodukas.isgerk(150);     
-        System.out.println(puodukas.kiekis);
-        
-        puodukas.isgerk(250);
-        System.out.println(puodukas.kiekis);
-        
-        puodukas.isgerk(-500);
-        System.out.println(puodukas.kiekis);
-        
-        puodukas.ipilk(-500);
-        System.out.println(puodukas.kiekis);
-        
+        puodukas.ipilk(250);
+        System.out.println(puodukas.getKiekis());
+        puodukas.ipilk(250);
+        System.out.println(puodukas.getKiekis());
+       
         Namas n = new Namas();
         n.aukstai = 5;
         n.butai = 90;
@@ -61,7 +41,9 @@ public class Objektai {
 //        p.spalva = 'r';
 //        p.kiekis = 0;
 //        
-//        Puodukas kp = new Puodukas();  // kp - kitas puodukas
+//        Puodukas kp = new Puodukas(150, 'b');  // kp - kitas puodukas
+//        System.out.println("Puodukas2:" + kp.turis);
+//        System.out.println("Puodukas2:" + kp.spalva);
 //        kp.turis = 150;
 //        kp.spalva = 'b';
 //        kp.kiekis = 100;
