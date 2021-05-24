@@ -13,9 +13,21 @@ public class Puodukas {
         kiekis = 0;
     }
     
+    public boolean getTuscias() {
+        return kiekis == 0;
+    }
+    
+    public boolean getPilnas() {
+        if (kiekis == turis) { // ARBA return kiekis == turis;
+            return true;
+        }
+        return false;
+    }
+    
     public int getTuris() {
         return turis;
     }
+    
     
     public int getKiekis() {
         return kiekis;
@@ -23,6 +35,10 @@ public class Puodukas {
     
     public char getSpalva() {
         return spalva;
+    }
+    
+    public void setSpalva(char naujaSpalva) {
+        spalva = naujaSpalva;
     }
     
     public void ipilk(int kiek) {

@@ -9,11 +9,15 @@ public class Objektai {
         
         System.out.println("Puodukas1:" + puodukas.getTuris());
         System.out.println("Puodukas1:" + puodukas.getSpalva());
+        puodukas.setSpalva('Z');
+        System.out.println("Puodukas1:" + puodukas.getSpalva());
 
         puodukas.ipilk(250);
-        System.out.println(puodukas.getKiekis());
+        System.out.println("Puodukas1:" + puodukas.getKiekis());
+        System.out.println(puodukas.getPilnas());
         puodukas.ipilk(250);
-        System.out.println(puodukas.getKiekis());
+        System.out.println("Puodukas1:" + puodukas.getKiekis());
+        System.out.println(puodukas.getPilnas());
        
         Namas n = new Namas();
         n.aukstai = 5;
